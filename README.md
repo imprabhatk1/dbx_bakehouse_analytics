@@ -1,2 +1,2 @@
 # dbx_bakehouse_analytics
-This is for datbricks bakehouse project and implement CICD.
+This is for Databricks bakehouse project and CICD implementation.
