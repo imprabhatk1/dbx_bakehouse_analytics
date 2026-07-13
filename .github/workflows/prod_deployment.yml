@@ -22,7 +22,7 @@ jobs:
 
     steps:
       # Check out this repo, so that this workflow can access it.
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Download the Databricks CLI.
       # See https://github.com/databricks/setup-cli
@@ -31,7 +31,7 @@ jobs:
       # Deploy the bundle to the "prod" target as defined
       # in the bundle's settings file.
       - run: databricks bundle deploy
-        working-directory: bakehosue_analytics
+        working-directory: bakehouse_analytics
         env:
           DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
           DATABRICKS_BUNDLE_ENV: prod
