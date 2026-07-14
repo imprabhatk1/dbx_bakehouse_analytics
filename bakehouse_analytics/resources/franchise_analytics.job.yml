@@ -9,8 +9,8 @@ resources:
           environment_key: Default
           notebook_task:
             base_parameters:
-              catalog: bakehouse_analytics_dev
-              schema: rnd
+              catalog: ${var.catalog}
+              schema: ${var.schema}
             notebook_path: ../src/franchise_analytics/franchise_analytics.ipynb
             source: WORKSPACE
           run_if: ALL_SUCCESS
